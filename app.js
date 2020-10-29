@@ -31,7 +31,7 @@ app.get("/input", function(req,res){
 
 app.post("/input", function(req,res){
     var dis = req.body.distance;
-    if(dis>=10){
+    if(dis>5){
         var instructions = {
             isMuted : false,
             volume : 50, //player.getVolume()
